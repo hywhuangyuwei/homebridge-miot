@@ -67,7 +67,7 @@ exports.handler = async argv => {
     log.info(`Connecting to device at  ${chalk.yellow(ip)}`);
     await MiioProtocolHelper.connect(ip, tokenToUse);
     log.info(`Device found! Executing action: ${chalk.cyan.bold(actionId)}`);
-    const res = await MiioProtocolHelper.send(ip, 'action', actionRequest, retries, timeout, debug);
+    const res = await MiioProtocolHelper.send(ip, 'action', actionRequest, retries, timeout, true);
     log.success(`Successfully executed the action!`);
   } catch (err) {
     log.error(err.message);
