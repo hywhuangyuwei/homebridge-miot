@@ -5,3 +5,8 @@ CONFIG_BLINK_LED_STRIP=y
 # ESP32-S3-DevKitC v1.0 uses GPIO48 for the on-board LED
 #
 CONFIG_BLINK_GPIO=38
+
+# Disable USB Serial JTAG for battery/external power operation
+# Only use UART for console to avoid USB dependency issues
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+CONFIG_ESP_CONSOLE_SECONDARY_NONE=y
