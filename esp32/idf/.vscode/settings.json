@@ -1,0 +1,8 @@
+{
+  "idf.currentSetup": "/Users/hywhu/.espressif/v5.5.1/esp-idf",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32s3.cfg"
+  ],
+  "cmake.ignoreCMakeListsMissing": true
+}
