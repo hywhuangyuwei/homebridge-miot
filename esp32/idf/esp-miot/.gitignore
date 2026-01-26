@@ -79,3 +79,4 @@ Desktop.ini
 
 # Local secrets (do not commit)
 main/secrets.h
+ino/esp_miot/constants.h
